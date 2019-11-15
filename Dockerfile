@@ -10,7 +10,7 @@ RUN apk add --update --no-cache python py-jinja2 py-yaml && \
     unzip ${ZIP_FILE} && \
     mv kubeone /usr/bin/kubeone && \
     chmod +x /usr/bin/kubeone && \
-    rm -rf ${ZIP_FILE} && rm -rf examples && 
+    rm -rf ${ZIP_FILE} && rm -rf examples && \
     rm -f /var/cache/apk/*
 
 WORKDIR /apps
